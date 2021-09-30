@@ -54,6 +54,7 @@ const Map = () => {
     });
     // Clean up on unmount
     return () => map.remove();
+    //dident add  dependencies: 'lat', 'lng', and 'zoom' for not reload every moving action shinge
   }, []);
 
   return (

@@ -9,7 +9,7 @@ const LeftInfo = ({ lng, lat, zoom }) => {
       </div>
       <hr />
       <div className="container">
-        {sentiment.map((sent,index) => (
+        {sentiment.map((sent, index) => (
           <div key={index} className="container">
             <span>{sent} :</span>
             <span className={`marker ${sent}`} />

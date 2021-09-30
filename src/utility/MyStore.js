@@ -2,6 +2,7 @@ import { entry, country } from "../db/Entry";
 import { getCountry } from "./Coordinates";
 let myStore = [];
 
+//extract country from the message related to country array 
 country.forEach((c) => {
   entry.forEach((e, index) => {
     if (e.message.toLowerCase().indexOf(c.toLowerCase()) !== -1) {
