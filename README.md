@@ -9,5 +9,5 @@ How can the different sentiment categories be visualized on a map and how can ti
 ## the attached 
 https://mail.google.com/mail/u/1/?ui=2&view=btop&ver=ops2cvpehp6#attid%253Datt_17c2cf80592a028d_0.1_f_ku47s0ln0
 
-## picture of the result 
+## Picture of the result 
 ![Screenshot (3)](https://user-images.githubusercontent.com/35805998/135412663-a88aae96-6690-4942-8e42-4d84256fd032.png)
