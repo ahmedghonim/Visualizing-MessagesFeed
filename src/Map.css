@@ -1,0 +1,76 @@
+.map-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.sidebarStyle {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 12px;
+  background-color: #404040;
+  color: #ffffff;
+  z-index: 1 !important;
+  padding: 6px;
+  font-weight: bold;
+}
+
+.marker {
+  z-index: 1;
+  cursor: pointer;
+  padding: 20px;
+  font-size: 20px !important;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 0 0;
+  border-radius: 50%;
+}
+
+.Negative {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url("./images/1.png");
+}
+.Positive {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url("./images/3.png");
+}
+.Neutrual {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url("./images/2.png");
+}
+
+.message {
+  position: absolute;
+  bottom: 45px;
+  z-index: 99990000000000000000000;
+  left: 0;
+  background-color: white;
+  color: black;
+  width: 100px;
+  height: auto;
+  font-size: 15px;
+  border-radius: 5px;
+  padding: 5px;
+  box-shadow: 5px -5px 5px grey;
+}
+.active {
+  display: none;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
