@@ -1,4 +1,4 @@
-import Map from "./Map";
+import Map from "./page/Map";
 
 function App() {
   return (

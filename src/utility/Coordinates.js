@@ -11,7 +11,9 @@ const getCountry = async (country, sentiment, message) => {
     )
     .catch((err) => console.log(err.message));
 
-  coordinates.push([data.features[0].geometry.coordinates, sentiment, message]);
+  const pathOfCoordinates = data.features[0].geometry.coordinates;
+
+  coordinates.push([pathOfCoordinates, sentiment, message]);
 };
 
 export { coordinates, getCountry, token };

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const Marker = ({ sentiment, message }) => {
+const Marker = ({ sentiment = "Neutrual", message="no message" }) => {
   const [isActive, setActive] = useState("false");
   const handleToggle = () => {
     setActive(!isActive);

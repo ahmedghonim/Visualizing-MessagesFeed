@@ -1,11 +1,11 @@
 import mapboxgl from "mapbox-gl";
 import React, { useEffect, useRef, useState } from "react";
 import ReactDOM from "react-dom";
-import Marker from "./Marker";
+import Marker from "../components/Marker";
 import "./Map.css";
-import myStore from "./MyStore";
-import { coordinates, getCountry, token } from "./Coordinates";
-import LeftInfo from "./LeftInfo";
+import callingAPI from "../utility/MyStore";
+import { coordinates, token } from "../utility/Coordinates";
+import LeftInfo from "../components/LeftInfo";
 mapboxgl.accessToken = token;
 
 const Map = () => {
@@ -15,13 +15,6 @@ const Map = () => {
   const [lat, setLat] = useState(30.033333);
   const [zoom, setZoom] = useState(1);
 
-  // start calling API and create list of coordinates
-  const start = () => {
-    myStore.forEach((element) => {
-      getCountry(element.country, element.sentiment, element.message);
-    });
-  };
-
   // Initialize map when component mounts
   useEffect(() => {
     const map = new mapboxgl.Map({
@@ -30,8 +23,8 @@ const Map = () => {
       center: [lng, lat],
       zoom: zoom,
     });
-    // start calling API and create list of coordinates
-    start();
+    // callingAPI calling API and create list of coordinates
+    callingAPI();
 
     //wating after api finsh
     setTimeout(() => {
